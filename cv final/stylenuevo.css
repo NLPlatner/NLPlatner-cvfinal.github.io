@@ -1,0 +1,379 @@
+* {font-family:'Inter', sans-serif;
+}
+body {
+    padding-top: 70px;
+
+}
+
+
+.cont {
+    background-color: rgb(255, 253, 237);
+}
+/* Menu */
+header {
+    background: white;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
+:target::before {
+    content: "";
+    display: block;
+    height: 80px; 
+    margin: -80px 0 0; 
+  }
+.nav_superior {
+    height: 70px;
+    width: 100%;
+    box-shadow: 1px 2px 7px 0 gray;
+}
+
+.navsup_izq {
+    float: left;
+    width: 80%;
+}
+
+.nav_li  {
+    display: inline-block;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+.nav_li :hover {
+    color: grey;
+}
+.nav_a {
+    text-decoration: none;
+    color: black;
+}
+
+.navsup_der {
+    float: right;
+    width: 20%;
+}
+.nav_der {
+    padding-right: 20px;
+    padding-top: 30px;
+}
+.nav_li_der {
+    float: right;
+}
+.icono {
+    height: 20px;
+    padding-right: 20px;
+}
+
+
+/* Contenedor */
+.contenedor{
+    margin: auto;
+    width: 80%;
+    height: auto;
+}
+.contenedor1 {
+    padding-top: 10px;
+    width: 100%;
+}
+
+.titulo {
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+    font-weight:bold;
+}
+
+/* Info personal */
+.info {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.contenedor_info {
+    width: 96%;
+    height: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 10px;
+    background-color: rgb(255, 227, 190);
+    border-radius: 20px;
+}
+
+.contenedor_foto {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    float: left;
+    border-radius:5px;
+    border: 1px solid #999;
+    width:220px;
+    height:220px;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background:url(Imagenes/Foto_perfil.png);
+    background-size: cover;
+}
+.contenedor_foto .contenedor_foto {
+    width: 100%;
+}
+
+@media all and (min-width: 500px) and (max-width: 1000px)
+{  
+.contenedor_foto{
+  margin-top:20px;
+  border-radius:5px;
+  border: 1px solid #999;
+  padding:13px;
+  width:300px;
+  height:300px;
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  background:url(Imagenes/Foto_perfil.png);
+  background-size: cover;
+  
+  }
+}
+.contenedor_foto .contenedor_foto{
+   width:100%;
+}
+.texto_info {
+    margin-right: 3%;
+    display: table-cell;
+}
+.texto_info_1 {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+h1{
+    text-align: center;
+}
+/* Experiencia*/
+
+.experiencia {
+    width: 100%;
+}
+
+.contenedor2 {
+    width: 96%;
+    height: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: rgb(255, 227, 190);
+    border-radius: 20px;
+}
+.texto_expe_edu_contac {
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 80%;
+}
+
+
+/* Habilidades */
+.habilidades {
+    width: 100%;
+    height: 400px;
+}
+.idiomas {
+    float: left;
+    width: 48%;
+    height: 300px;
+    background-color: rgb(255, 227, 190);
+    border-radius: 20px;
+    font-style: italic;
+}
+.contenedor_ingles{
+    width: 100%;
+    margin-bottom: 30px;    
+}
+.ingles {
+    float: left;
+    margin: auto;
+    padding-left: 100px;
+    height: 50%;
+    text-decoration: underline;
+    
+}
+.nivel_idiomas {
+    width: 100%;
+    height: auto;
+}
+.nivel_oral {
+    float: left;
+    width: 50%;
+    text-align: center;
+    font-style: normal;
+}
+.nivel_escrito {
+    float: right;
+    width: 50%;
+    text-align: center;
+    font-style: normal;
+}
+
+.porcentaje1 {
+    float: left;
+    margin: auto;
+    padding-left: 100px;
+    padding-top: 20px;
+    width: 50%;
+}
+.porcentaje2 {
+    float: right;
+    margin: auto;
+    padding-left: 100px;
+    padding-top: 20px;
+    width: 50%;
+}
+.circular {
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+.circular .dentro, .circular .fuera, .circular .circulo {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    box-shadow: 1px 2px 7px 0 gray;
+}
+.circular .dentro {
+    box-shadow: none;
+    background-color: rgb(255, 253, 237);
+}
+.circular .numero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    font-weight: 500;
+    color: black;
+}
+
+
+
+.circular2 {
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+.circular2 .dentro2, .circular2 .fuera2, .circular2 .circulo2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    box-shadow: 1px 2px 7px 0 gray;
+}
+.circular2 .dentro2 {
+    box-shadow: none;
+    background-color: rgb(255, 253, 237);
+}
+.circular2 .numero2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    font-weight: 500;
+    color: black;
+}
+
+.titulo_idiomayinfo {
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.informatica {
+    float: right;
+    width: 48%;
+    height: 300px;
+    background-color: rgb(255, 227, 190);
+    border-radius: 20px;
+    font-style: italic;
+}
+progress {
+    float: right;
+    margin-right: 300px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+::-webkit-progress-bar {
+    background-color: rgb(255, 253, 237);
+}
+::-webkit-progress-value {
+    background-color: rgb(250, 207, 151);
+}
+.info_texto {
+    margin-left: 50px;
+    font-style: normal;
+}
+/* Educación */
+.educacion {
+    height: 500px;
+    margin-bottom: 10px;
+}
+.contenedor_edu {
+    height: 400px;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+.academico {
+    float: left;
+    margin-left: 2%;
+    margin-top: 2%;
+    width: 47%;
+    text-align: center;
+    background-color: rgb(255, 227, 190);
+    border-radius: 20px;
+}
+.cursos {
+    float: right;
+    margin-right: 2%;
+    margin-top: 2%;
+    width: 47%;
+    text-align: center;
+    background-color: rgb(255, 227, 190);
+    border-radius: 20px;
+
+}
+
+
+
+/* Contacto */
+contenedor_contacto {
+    width: 100%;
+}
+
+.a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    display: inline-block;
+}
+.ul_contacto {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.il_contacto{
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+
+.footer {
+    text-align: center;
+}
